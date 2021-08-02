@@ -1,0 +1,4100 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"26 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h: 26:  void pwmInit(void);
+[v _pwmInit `(v ~T0 @X0 0 ef ]
+"1922 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1922: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"25 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/lcd.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/lcd.h: 25:  void lcdInit(void);
+[v _lcdInit `(v ~T0 @X0 0 ef ]
+"25 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/keypad.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/keypad.h: 25:  void kpInit(void);
+[v _kpInit `(v ~T0 @X0 0 ef ]
+"23 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/lcd.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/lcd.h: 23:  void lcdCommand(unsigned char cmd);
+[v _lcdCommand `(v ~T0 @X0 0 ef1`uc ]
+"24
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/lcd.h: 24:  void lcdData(unsigned char valor);
+[v _lcdData `(v ~T0 @X0 0 ef1`uc ]
+"31 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/rtc.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/rtc.h: 31: void rtc_r(void);
+[v _rtc_r `(v ~T0 @X0 0 ef ]
+"27
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/rtc.h: 27: extern volatile char time[10];
+[v _time `Vuc ~T0 @X0 -> 0 `x e ]
+"24 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/keypad.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/keypad.h: 24:  void kpDebounce(void);
+[v _kpDebounce `(v ~T0 @X0 0 ef ]
+"23
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/keypad.h: 23:  unsigned int kpRead(void);
+[v _kpRead `(ui ~T0 @X0 0 ef ]
+"38 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 38: void tocarAlarme();
+[v _tocarAlarme `(v ~T0 @X0 0 e? ]
+"1478 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1478: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"2144
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2144: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"633
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 633: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
+[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
+"23 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h: 23:  void pwmSet1(unsigned char porcento);
+[v _pwmSet1 `(v ~T0 @X0 0 ef1`uc ]
+"53 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 53: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
+[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
+"26 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.h: 26: void atraso_ms(unsigned int valor);
+[v _atraso_ms `(v ~T0 @X0 0 ef1`ui ]
+"25 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.h: 25:  void pwmFrequency(unsigned int freq);
+[v _pwmFrequency `(v ~T0 @X0 0 ef1`ui ]
+"26 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/config.h
+[p x OSC=HS                   ]
+"27
+[p x FCMEN  =  OFF ]
+"28
+[p x IESO  =  OFF ]
+"29
+[p x PWRT  =  OFF ]
+"30
+[p x BOREN  =  OFF ]
+"31
+[p x BORV  =  46 ]
+"32
+[p x WDT=OFF                  ]
+"33
+[p x WDTPS  =  1                ]
+"34
+[p x MCLRE=ON                 ]
+"35
+[p x LPT1OSC  =  OFF ]
+"36
+[p x PBADEN  =  ON ]
+"37
+[p x CCP2MX  =  PORTC ]
+"38
+[p x STVREN  =  OFF ]
+"39
+[p x LVP=OFF                  ]
+"40
+[p x XINST  =  OFF ]
+"41
+[p x DEBUG  =  OFF              ]
+"43
+[p x CP0  =  OFF ]
+"44
+[p x CP1  =  OFF ]
+"45
+[p x CP2  =  OFF ]
+"46
+[p x CP3  =  OFF ]
+"47
+[p x CPB  =  OFF ]
+"48
+[p x CPD  =  OFF ]
+"50
+[p x WRT0  =  OFF ]
+"51
+[p x WRT1  =  OFF ]
+"52
+[p x WRT2  =  OFF ]
+"53
+[p x WRT3  =  OFF ]
+"54
+[p x WRTB  =  OFF ]
+"55
+[p x WRTC  =  OFF ]
+"56
+[p x WRTD  =  OFF ]
+"58
+[p x EBTR0  =  OFF ]
+"59
+[p x EBTR1  =  OFF ]
+"60
+[p x EBTR2  =  OFF ]
+"61
+[p x EBTR3  =  OFF ]
+"62
+[p x EBTRB  =  OFF ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 55: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"274
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 274: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"453
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 453: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"635
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 635: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"777
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 777: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"980
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 980: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1092
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1092: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1204
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1204: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1316
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1316: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1428
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1428: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"1480
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1480: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1485
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1485: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1702
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1702: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1707
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1707: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1924
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1924: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1929
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 1929: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2146
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2146: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2151
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2151: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2368
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2368: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2373
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2373: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"2532
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2532: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2597
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2597: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"2674
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2674: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"2751
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2751: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"2828
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2828: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2894
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2894: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2960
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 2960: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3026
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3026: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3092
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3092: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3099
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3099: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3106
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3106: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3113
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3113: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3118
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3118: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3323
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3323: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3328
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3328: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"3579
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3579: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"3584
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3584: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"3591
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3591: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"3596
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3596: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"3603
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3603: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"3608
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3608: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3615
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3615: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"3622
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3622: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"3734
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3734: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"3741
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3741: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"3748
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3748: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"3755
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3755: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"3845
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3845: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3924
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3924: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3929
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 3929: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"4086
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4086: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4091
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4091: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"4224
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4224: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4229
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4229: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4404
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4404: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4483
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4483: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4490
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4490: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4497
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4497: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4504
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4504: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"4601
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4601: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"4608
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4608: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"4615
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4615: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"4622
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4622: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"4693
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4693: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"4778
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4778: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"4897
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4897: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"4904
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4904: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"4911
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4911: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"4918
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 4918: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5013
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5013: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5083
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5083: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5304
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5304: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5311
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5311: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5318
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5318: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5416
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5416: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5421
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5421: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5526
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5526: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5533
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5533: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5636
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5636: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5643
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5643: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"5650
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5650: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"5657
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5657: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"5790
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5790: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"5818
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5818: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"5823
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 5823: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6088
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6088: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6171
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6171: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6254
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6254: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6261
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6261: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6268
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6268: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6275
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6275: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6346
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6346: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6353
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6353: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6360
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6360: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6367
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6367: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6374
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6374: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6381
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6381: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6388
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6388: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6395
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6395: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6402
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6402: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6409
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6409: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6416
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6416: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6423
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6423: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6430
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6430: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6437
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6437: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6444
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6444: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6451
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6451: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6458
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6458: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6465
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6465: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6477
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6477: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6484
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6484: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6491
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6491: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6498
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6498: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6505
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6505: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6512
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6512: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6519
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6519: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6526
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6526: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6533
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6533: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6625
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6625: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"6695
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6695: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"6812
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6812: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"6819
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6819: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"6826
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6826: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"6833
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6833: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"6842
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6842: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"6849
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6849: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6856
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6856: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6863
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6863: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6872
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6872: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"6879
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6879: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"6886
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6886: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"6893
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6893: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"6900
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6900: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"6907
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6907: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"6981
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6981: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"6988
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6988: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6995
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 6995: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"7002
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f4520.h: 7002: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"18 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 18: unsigned int i, pos = 0, tecla = 16;
+[v _i `ui ~T0 @X0 1 e ]
+[v _pos `ui ~T0 @X0 1 e ]
+[i _pos
+-> -> 0 `i `ui
+]
+[v _tecla `ui ~T0 @X0 1 e ]
+[i _tecla
+-> -> 16 `i `ui
+]
+"19
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 19: unsigned long int cont = 0;
+[v _cont `ul ~T0 @X0 1 e ]
+[i _cont
+-> -> -> 0 `i `l `ul
+]
+"20
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 20: int h_rel, m_rel, s_rel;
+[v _h_rel `i ~T0 @X0 1 e ]
+[v _m_rel `i ~T0 @X0 1 e ]
+[v _s_rel `i ~T0 @X0 1 e ]
+"21
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 21: int h_alar, m_alar, s_alar;
+[v _h_alar `i ~T0 @X0 1 e ]
+[v _m_alar `i ~T0 @X0 1 e ]
+[v _s_alar `i ~T0 @X0 1 e ]
+[v F2599 `uc ~T0 @X0 -> 16 `i t ]
+"23
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 23: char msg_principal[2][16] = {"1- Ajustar Alarm", "2- Opcoes Alarm"};
+[v _msg_principal `F2599 ~T0 @X0 -> 2 `i e ]
+[i _msg_principal
+:U ..
+:U ..
+-> 49 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 106 `c
+-> 117 `c
+-> 115 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 32 `c
+-> 65 `c
+-> 108 `c
+-> 97 `c
+-> 114 `c
+-> 109 `c
+..
+:U ..
+-> 50 `c
+-> 45 `c
+-> 32 `c
+-> 79 `c
+-> 112 `c
+-> 99 `c
+-> 111 `c
+-> 101 `c
+-> 115 `c
+-> 32 `c
+-> 65 `c
+-> 108 `c
+-> 97 `c
+-> 114 `c
+-> 109 `c
+-> 0 `c
+..
+..
+]
+[v F2601 `uc ~T0 @X0 -> 16 `i t ]
+"24
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 24: char msg_ajus_alarm[3][16] = {"1 a 6 - Ajustar", "* - Cancelar", "# - Salvar"};
+[v _msg_ajus_alarm `F2601 ~T0 @X0 -> 3 `i e ]
+[i _msg_ajus_alarm
+:U ..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 97 `c
+-> 32 `c
+-> 54 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 106 `c
+-> 117 `c
+-> 115 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 67 `c
+-> 97 `c
+-> 110 `c
+-> 99 `c
+-> 101 `c
+-> 108 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 35 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 83 `c
+-> 97 `c
+-> 108 `c
+-> 118 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2603 `uc ~T0 @X0 -> 16 `i t ]
+"25
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 25: char msg_opc_alarm[4][16] = {"1 - Acend Luzes", "2 - Senha p/ Des", "3 - Soneca", "* - Voltar"};
+[v _msg_opc_alarm `F2603 ~T0 @X0 -> 4 `i e ]
+[i _msg_opc_alarm
+:U ..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 99 `c
+-> 101 `c
+-> 110 `c
+-> 100 `c
+-> 32 `c
+-> 76 `c
+-> 117 `c
+-> 122 `c
+-> 101 `c
+-> 115 `c
+-> 0 `c
+..
+:U ..
+-> 50 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 83 `c
+-> 101 `c
+-> 110 `c
+-> 104 `c
+-> 97 `c
+-> 32 `c
+-> 112 `c
+-> 47 `c
+-> 32 `c
+-> 68 `c
+-> 101 `c
+-> 115 `c
+..
+:U ..
+-> 51 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 83 `c
+-> 111 `c
+-> 110 `c
+-> 101 `c
+-> 99 `c
+-> 97 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 86 `c
+-> 111 `c
+-> 108 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2605 `uc ~T0 @X0 -> 16 `i t ]
+"26
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 26: char msg_luzes[3][16] = {"Luzes: OFF", "1 - Ativ/Desat", "* - Voltar"};
+[v _msg_luzes `F2605 ~T0 @X0 -> 3 `i e ]
+[i _msg_luzes
+:U ..
+:U ..
+-> 76 `c
+-> 117 `c
+-> 122 `c
+-> 101 `c
+-> 115 `c
+-> 58 `c
+-> 32 `c
+-> 79 `c
+-> 70 `c
+-> 70 `c
+-> 0 `c
+..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 116 `c
+-> 105 `c
+-> 118 `c
+-> 47 `c
+-> 68 `c
+-> 101 `c
+-> 115 `c
+-> 97 `c
+-> 116 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 86 `c
+-> 111 `c
+-> 108 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2607 `uc ~T0 @X0 -> 16 `i t ]
+"27
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 27: char msg_senha[4][16] = {"Senha: OFF", "1 - Ativ/Desat", "2 - Alter Senha", "* - Voltar"};
+[v _msg_senha `F2607 ~T0 @X0 -> 4 `i e ]
+[i _msg_senha
+:U ..
+:U ..
+-> 83 `c
+-> 101 `c
+-> 110 `c
+-> 104 `c
+-> 97 `c
+-> 58 `c
+-> 32 `c
+-> 79 `c
+-> 70 `c
+-> 70 `c
+-> 0 `c
+..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 116 `c
+-> 105 `c
+-> 118 `c
+-> 47 `c
+-> 68 `c
+-> 101 `c
+-> 115 `c
+-> 97 `c
+-> 116 `c
+-> 0 `c
+..
+:U ..
+-> 50 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 108 `c
+-> 116 `c
+-> 101 `c
+-> 114 `c
+-> 32 `c
+-> 83 `c
+-> 101 `c
+-> 110 `c
+-> 104 `c
+-> 97 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 86 `c
+-> 111 `c
+-> 108 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2609 `uc ~T0 @X0 -> 16 `i t ]
+"28
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 28: char msg_alt_senha[4][16] = {"Atual: ", "Digite: ", "* - Cancelar", "# - Salvar"};
+[v _msg_alt_senha `F2609 ~T0 @X0 -> 4 `i e ]
+[i _msg_alt_senha
+:U ..
+:U ..
+-> 65 `c
+-> 116 `c
+-> 117 `c
+-> 97 `c
+-> 108 `c
+-> 58 `c
+-> 32 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 105 `c
+-> 103 `c
+-> 105 `c
+-> 116 `c
+-> 101 `c
+-> 58 `c
+-> 32 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 67 `c
+-> 97 `c
+-> 110 `c
+-> 99 `c
+-> 101 `c
+-> 108 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 35 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 83 `c
+-> 97 `c
+-> 108 `c
+-> 118 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2611 `uc ~T0 @X0 -> 16 `i t ]
+"29
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 29: char msg_soneca[4][16] = {"Soneca: OFF", "1 - Ativ/Desat", "2 - Ajust Tempo", "* - Voltar"};
+[v _msg_soneca `F2611 ~T0 @X0 -> 4 `i e ]
+[i _msg_soneca
+:U ..
+:U ..
+-> 83 `c
+-> 111 `c
+-> 110 `c
+-> 101 `c
+-> 99 `c
+-> 97 `c
+-> 58 `c
+-> 32 `c
+-> 79 `c
+-> 70 `c
+-> 70 `c
+-> 0 `c
+..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 116 `c
+-> 105 `c
+-> 118 `c
+-> 47 `c
+-> 68 `c
+-> 101 `c
+-> 115 `c
+-> 97 `c
+-> 116 `c
+-> 0 `c
+..
+:U ..
+-> 50 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 106 `c
+-> 117 `c
+-> 115 `c
+-> 116 `c
+-> 32 `c
+-> 84 `c
+-> 101 `c
+-> 109 `c
+-> 112 `c
+-> 111 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 86 `c
+-> 111 `c
+-> 108 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2613 `uc ~T0 @X0 -> 16 `i t ]
+"30
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 30: char msg_ajus_tempo[4][16] = {"Tempo:    seg", "1 - Aumentar", "2 - Diminuir", "* - Voltar"};
+[v _msg_ajus_tempo `F2613 ~T0 @X0 -> 4 `i e ]
+[i _msg_ajus_tempo
+:U ..
+:U ..
+-> 84 `c
+-> 101 `c
+-> 109 `c
+-> 112 `c
+-> 111 `c
+-> 58 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 32 `c
+-> 115 `c
+-> 101 `c
+-> 103 `c
+-> 0 `c
+..
+:U ..
+-> 49 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 65 `c
+-> 117 `c
+-> 109 `c
+-> 101 `c
+-> 110 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 50 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 68 `c
+-> 105 `c
+-> 109 `c
+-> 105 `c
+-> 110 `c
+-> 117 `c
+-> 105 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 86 `c
+-> 111 `c
+-> 108 `c
+-> 116 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+..
+]
+[v F2615 `uc ~T0 @X0 -> 16 `i t ]
+"31
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 31: char msg_alarm_ativ[7][16] = {"* - Desativar", "# - Soneca", "Senha: ", "Senha Incorreta!", "Digite novamente", "Soneca Ativada", "Novo horario:"};
+[v _msg_alarm_ativ `F2615 ~T0 @X0 -> 7 `i e ]
+[i _msg_alarm_ativ
+:U ..
+:U ..
+-> 42 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 68 `c
+-> 101 `c
+-> 115 `c
+-> 97 `c
+-> 116 `c
+-> 105 `c
+-> 118 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+:U ..
+-> 35 `c
+-> 32 `c
+-> 45 `c
+-> 32 `c
+-> 83 `c
+-> 111 `c
+-> 110 `c
+-> 101 `c
+-> 99 `c
+-> 97 `c
+-> 0 `c
+..
+:U ..
+-> 83 `c
+-> 101 `c
+-> 110 `c
+-> 104 `c
+-> 97 `c
+-> 58 `c
+-> 32 `c
+-> 0 `c
+..
+:U ..
+-> 83 `c
+-> 101 `c
+-> 110 `c
+-> 104 `c
+-> 97 `c
+-> 32 `c
+-> 73 `c
+-> 110 `c
+-> 99 `c
+-> 111 `c
+-> 114 `c
+-> 114 `c
+-> 101 `c
+-> 116 `c
+-> 97 `c
+-> 33 `c
+..
+:U ..
+-> 68 `c
+-> 105 `c
+-> 103 `c
+-> 105 `c
+-> 116 `c
+-> 101 `c
+-> 32 `c
+-> 110 `c
+-> 111 `c
+-> 118 `c
+-> 97 `c
+-> 109 `c
+-> 101 `c
+-> 110 `c
+-> 116 `c
+-> 101 `c
+..
+:U ..
+-> 83 `c
+-> 111 `c
+-> 110 `c
+-> 101 `c
+-> 99 `c
+-> 97 `c
+-> 32 `c
+-> 65 `c
+-> 116 `c
+-> 105 `c
+-> 118 `c
+-> 97 `c
+-> 100 `c
+-> 97 `c
+-> 0 `c
+..
+:U ..
+-> 78 `c
+-> 111 `c
+-> 118 `c
+-> 111 `c
+-> 32 `c
+-> 104 `c
+-> 111 `c
+-> 114 `c
+-> 97 `c
+-> 114 `c
+-> 105 `c
+-> 111 `c
+-> 58 `c
+-> 0 `c
+..
+..
+]
+"33
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 33: char senha[4], aux_senha[4];
+[v _senha `uc ~T0 @X0 -> 4 `i e ]
+[v _aux_senha `uc ~T0 @X0 -> 4 `i e ]
+"34
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 34: char hor_relo[16], hor_alarm[16] = "00:00:00", aux_alarm[16];
+[v _hor_relo `uc ~T0 @X0 -> 16 `i e ]
+[v _hor_alarm `uc ~T0 @X0 -> 16 `i e ]
+[i _hor_alarm
+:U ..
+-> 48 `c
+-> 48 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 0 `c
+..
+]
+[v _aux_alarm `uc ~T0 @X0 -> 16 `i e ]
+"35
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 35: char tempo_son[2] = "05";
+[v _tempo_son `uc ~T0 @X0 -> 2 `i e ]
+[i _tempo_son
+:U ..
+-> 48 `c
+-> 53 `c
+..
+]
+"36
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 36: int aux_tempo;
+[v _aux_tempo `i ~T0 @X0 1 e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"41
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 41: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"43
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 43:     pwmInit();
+[e ( _pwmInit ..  ]
+"44
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 44:     TRISC = 0x00;
+[e = _TRISC -> -> 0 `i `uc ]
+"46
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 46:     lcdInit();
+[e ( _lcdInit ..  ]
+"47
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 47:     kpInit();
+[e ( _kpInit ..  ]
+"49
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 49:     for (;;) {
+{
+[e :U 282 ]
+{
+"50
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 50:         lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"53
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 53:         lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"55
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 55:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 285  ]
+[e $U 286  ]
+[e :U 285 ]
+{
+"56
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 56:             lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"57
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 57:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 285  ]
+[e :U 286 ]
+}
+"59
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 59:         rtc_r();
+[e ( _rtc_r ..  ]
+"60
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 60:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 288  ]
+[e $U 289  ]
+[e :U 288 ]
+{
+"61
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 61:             hor_relo[i] = time[i];
+[e = *U + &U _hor_relo * -> _i `ux -> -> # *U &U _hor_relo `ui `ux *U + &U _time * -> _i `ux -> -> # *U &U _time `ui `ux ]
+"62
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 62:             lcdData(hor_relo[i]);
+[e ( _lcdData (1 -> *U + &U _hor_relo * -> _i `ux -> -> # *U &U _hor_relo `ui `ux `uc ]
+"63
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 63:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 288  ]
+[e :U 289 ]
+}
+"65
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 65:         h_rel = ((hor_relo[0] - 48)*10) + (hor_relo[1] - 48);
+[e = _h_rel + * - -> *U + &U _hor_relo * -> -> -> 0 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_relo * -> -> -> 1 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i ]
+"66
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 66:         m_rel = ((hor_relo[3] - 48)*10) + (hor_relo[4] - 48);
+[e = _m_rel + * - -> *U + &U _hor_relo * -> -> -> 3 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_relo * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i ]
+"67
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 67:         s_rel = ((hor_relo[6] - 48)*10) + (hor_relo[7] - 48);
+[e = _s_rel + * - -> *U + &U _hor_relo * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_relo * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux `i -> 48 `i ]
+"70
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 70:         lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"71
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 71:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 291  ]
+[e $U 292  ]
+[e :U 291 ]
+{
+"72
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 72:             lcdData(msg_principal[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_principal * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_principal `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_principal * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_principal `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"73
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 73:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 291  ]
+[e :U 292 ]
+}
+"77
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 77:         lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"78
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 78:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 294  ]
+[e $U 295  ]
+[e :U 294 ]
+{
+"79
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 79:             lcdData(msg_principal[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_principal * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_principal `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_principal * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_principal `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"80
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 80:         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 294  ]
+[e :U 295 ]
+}
+"84
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 84:         for (;;) {
+{
+[e :U 297 ]
+{
+"86
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 86:             cont++;
+[e ++ _cont -> -> -> 1 `i `l `ul ]
+"88
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 88:             if ((cont % 180) == 0) {
+[e $ ! == % _cont -> -> -> 180 `i `l `ul -> -> -> 0 `i `l `ul 300  ]
+{
+"89
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 89:                 s_rel++;
+[e ++ _s_rel -> 1 `i ]
+"90
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 90:             }
+}
+[e :U 300 ]
+"92
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 92:             if (s_rel >= 60) {
+[e $ ! >= _s_rel -> 60 `i 301  ]
+{
+"93
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 93:                 s_rel = 0;
+[e = _s_rel -> 0 `i ]
+"94
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 94:                 m_rel++;
+[e ++ _m_rel -> 1 `i ]
+"95
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 95:                 if (m_rel >= 60) {
+[e $ ! >= _m_rel -> 60 `i 302  ]
+{
+"96
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 96:                     m_rel = 0;
+[e = _m_rel -> 0 `i ]
+"97
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 97:                     h_rel++;
+[e ++ _h_rel -> 1 `i ]
+"98
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 98:                     if (h_rel >= 24) {
+[e $ ! >= _h_rel -> 24 `i 303  ]
+{
+"99
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 99:                         h_rel = 0;
+[e = _h_rel -> 0 `i ]
+"100
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 100:                     }
+}
+[e :U 303 ]
+"101
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 101:                 }
+}
+[e :U 302 ]
+"102
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 102:             }
+}
+[e :U 301 ]
+"104
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 104:             hor_relo[0] = (h_rel / 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 0 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + / _h_rel -> 10 `i -> 48 `i `uc ]
+"105
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 105:             hor_relo[1] = (h_rel % 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 1 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + % _h_rel -> 10 `i -> 48 `i `uc ]
+"106
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 106:             hor_relo[3] = (m_rel / 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 3 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + / _m_rel -> 10 `i -> 48 `i `uc ]
+"107
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 107:             hor_relo[4] = (m_rel % 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + % _m_rel -> 10 `i -> 48 `i `uc ]
+"108
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 108:             hor_relo[6] = (s_rel / 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + / _s_rel -> 10 `i -> 48 `i `uc ]
+"109
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 109:             hor_relo[7] = (s_rel % 10) + 48;
+[e = *U + &U _hor_relo * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_relo `ui `ux -> + % _s_rel -> 10 `i -> 48 `i `uc ]
+"111
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 111:             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"112
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 112:             for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 304  ]
+[e $U 305  ]
+[e :U 304 ]
+{
+"113
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 113:                 lcdData(hor_relo[i]);
+[e ( _lcdData (1 -> *U + &U _hor_relo * -> _i `ux -> -> # *U &U _hor_relo `ui `ux `uc ]
+"114
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 114:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 304  ]
+[e :U 305 ]
+}
+"117
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 117:             kpDebounce();
+[e ( _kpDebounce ..  ]
+"118
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 118:             if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 307  ]
+{
+"119
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 119:                 tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"120
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 120:                 break;
+[e $U 298  ]
+"121
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 121:             }
+}
+[e :U 307 ]
+"124
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 124:             for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 308  ]
+[e $U 309  ]
+[e :U 308 ]
+{
+"125
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 125:                 if (hor_alarm[i] != hor_relo[i]) {
+[e $ ! != -> *U + &U _hor_alarm * -> _i `ux -> -> # *U &U _hor_alarm `ui `ux `i -> *U + &U _hor_relo * -> _i `ux -> -> # *U &U _hor_relo `ui `ux `i 311  ]
+{
+"126
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 126:                     break;
+[e $U 309  ]
+"127
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 127:                 }
+}
+[e :U 311 ]
+"128
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 128:                 if (i == 7) {
+[e $ ! == _i -> -> 7 `i `ui 312  ]
+{
+"129
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 129:                     s_rel++;
+[e ++ _s_rel -> 1 `i ]
+"130
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 130:                     tocarAlarme();
+[e ( _tocarAlarme ..  ]
+"131
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 131:                 }
+}
+[e :U 312 ]
+"132
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 132:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 308  ]
+[e :U 309 ]
+}
+"133
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 133:         }
+}
+[e $U 297  ]
+[e :U 298 ]
+}
+"136
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 136:         if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 313  ]
+{
+"138
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 138:             for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 314  ]
+[e $U 315  ]
+[e :U 314 ]
+{
+"139
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 139:                 aux_alarm[i] = hor_alarm[i];
+[e = *U + &U _aux_alarm * -> _i `ux -> -> # *U &U _aux_alarm `ui `ux *U + &U _hor_alarm * -> _i `ux -> -> # *U &U _hor_alarm `ui `ux ]
+"140
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 140:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 314  ]
+[e :U 315 ]
+}
+"142
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 142:             h_alar = ((hor_alarm[0] - 48)*10) + (hor_alarm[1] - 48);
+[e = _h_alar + * - -> *U + &U _hor_alarm * -> -> -> 0 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_alarm * -> -> -> 1 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i ]
+"143
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 143:             m_alar = ((hor_alarm[3] - 48)*10) + (hor_alarm[4] - 48);
+[e = _m_alar + * - -> *U + &U _hor_alarm * -> -> -> 3 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_alarm * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i ]
+"144
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 144:             s_alar = ((hor_alarm[6] - 48)*10) + (hor_alarm[7] - 48);
+[e = _s_alar + * - -> *U + &U _hor_alarm * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hor_alarm * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `i -> 48 `i ]
+"147
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 147:             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"148
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 148:             for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 317  ]
+[e $U 318  ]
+[e :U 317 ]
+{
+"149
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 149:                 lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> _i `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"150
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 150:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 317  ]
+[e :U 318 ]
+}
+"153
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 153:             lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"154
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 154:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 320  ]
+[e $U 321  ]
+[e :U 320 ]
+{
+"155
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 155:                 lcdData(msg_ajus_alarm[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_alarm * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_alarm * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"156
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 156:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 320  ]
+[e :U 321 ]
+}
+"159
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 159:             lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"160
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 160:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 323  ]
+[e $U 324  ]
+[e :U 323 ]
+{
+"161
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 161:                 lcdData(msg_ajus_alarm[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_alarm * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_alarm * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"162
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 162:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 323  ]
+[e :U 324 ]
+}
+"165
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 165:             lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"166
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 166:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 326  ]
+[e $U 327  ]
+[e :U 326 ]
+{
+"167
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 167:                 lcdData(msg_ajus_alarm[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_alarm * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_alarm * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"168
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 168:             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 326  ]
+[e :U 327 ]
+}
+"170
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 170:             for (;;) {
+{
+[e :U 329 ]
+{
+"171
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 171:                 kpDebounce();
+[e ( _kpDebounce ..  ]
+"172
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 172:                 if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 332  ]
+{
+"173
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 173:                     tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"176
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 176:                     if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 333  ]
+{
+"177
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 177:                         h_alar += 1;
+[e =+ _h_alar -> 1 `i ]
+"179
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 179:                         if (h_alar > 23)
+[e $ ! > _h_alar -> 23 `i 334  ]
+"180
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 180:                             h_alar = 0;
+[e = _h_alar -> 0 `i ]
+[e :U 334 ]
+"182
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 182:                         hor_alarm[0] = ((h_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 0 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _h_alar -> 10 `i -> 48 `i `uc ]
+"183
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 183:                         hor_alarm[1] = ((h_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 1 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _h_alar -> 10 `i -> 48 `i `uc ]
+"184
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 184:                     }
+}
+[e $U 335  ]
+"185
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 185:                     else if (((tecla) & (1<<(2)))) {
+[e :U 333 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 2 `i `ui -> -> 0 `i `ui 336  ]
+{
+"186
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 186:                         h_alar -= 1;
+[e =- _h_alar -> 1 `i ]
+"188
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 188:                         if (h_alar < 1)
+[e $ ! < _h_alar -> 1 `i 337  ]
+"189
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 189:                             h_alar = 23;
+[e = _h_alar -> 23 `i ]
+[e :U 337 ]
+"191
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 191:                         hor_alarm[0] = ((h_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 0 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _h_alar -> 10 `i -> 48 `i `uc ]
+"192
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 192:                         hor_alarm[1] = ((h_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 1 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _h_alar -> 10 `i -> 48 `i `uc ]
+"193
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 193:                     }
+}
+[e $U 338  ]
+"194
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 194:                     else if (((tecla) & (1<<(7)))) {
+[e :U 336 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 339  ]
+{
+"195
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 195:                         m_alar += 1;
+[e =+ _m_alar -> 1 `i ]
+"197
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 197:                         if (m_alar > 59)
+[e $ ! > _m_alar -> 59 `i 340  ]
+"198
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 198:                             m_alar = 0;
+[e = _m_alar -> 0 `i ]
+[e :U 340 ]
+"200
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 200:                         hor_alarm[3] = ((m_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 3 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _m_alar -> 10 `i -> 48 `i `uc ]
+"201
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 201:                         hor_alarm[4] = ((m_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _m_alar -> 10 `i -> 48 `i `uc ]
+"202
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 202:                     }
+}
+[e $U 341  ]
+"203
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 203:                     else if (((tecla) & (1<<(6)))) {
+[e :U 339 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 6 `i `ui -> -> 0 `i `ui 342  ]
+{
+"204
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 204:                         m_alar -= 1;
+[e =- _m_alar -> 1 `i ]
+"206
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 206:                         if (m_alar < 1)
+[e $ ! < _m_alar -> 1 `i 343  ]
+"207
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 207:                             m_alar = 59;
+[e = _m_alar -> 59 `i ]
+[e :U 343 ]
+"209
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 209:                         hor_alarm[3] = ((m_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 3 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _m_alar -> 10 `i -> 48 `i `uc ]
+"210
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 210:                         hor_alarm[4] = ((m_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _m_alar -> 10 `i -> 48 `i `uc ]
+"211
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 211:                     }
+}
+[e $U 344  ]
+"212
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 212:                     else if (((tecla) & (1<<(11)))) {
+[e :U 342 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 11 `i `ui -> -> 0 `i `ui 345  ]
+{
+"213
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 213:                         s_alar += 1;
+[e =+ _s_alar -> 1 `i ]
+"215
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 215:                         if (s_alar > 59)
+[e $ ! > _s_alar -> 59 `i 346  ]
+"216
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 216:                             s_alar = 0;
+[e = _s_alar -> 0 `i ]
+[e :U 346 ]
+"218
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 218:                         hor_alarm[6] = ((s_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _s_alar -> 10 `i -> 48 `i `uc ]
+"219
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 219:                         hor_alarm[7] = ((s_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _s_alar -> 10 `i -> 48 `i `uc ]
+"220
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 220:                     }
+}
+[e $U 347  ]
+"221
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 221:                     else if (((tecla) & (1<<(10)))) {
+[e :U 345 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 10 `i `ui -> -> 0 `i `ui 348  ]
+{
+"222
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 222:                         s_alar -= 1;
+[e =- _s_alar -> 1 `i ]
+"224
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 224:                         if (s_alar < 1)
+[e $ ! < _s_alar -> 1 `i 349  ]
+"225
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 225:                             s_alar = 59;
+[e = _s_alar -> 59 `i ]
+[e :U 349 ]
+"227
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 227:                         hor_alarm[6] = ((s_alar / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _s_alar -> 10 `i -> 48 `i `uc ]
+"228
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 228:                         hor_alarm[7] = ((s_alar % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _s_alar -> 10 `i -> 48 `i `uc ]
+"229
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 229:                     }
+}
+[e $U 350  ]
+"230
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 230:                     else if (((tecla) & (1<<(0)))) {
+[e :U 348 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 351  ]
+{
+"231
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 231:                         for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 352  ]
+[e $U 353  ]
+[e :U 352 ]
+{
+"232
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 232:                             hor_alarm[i] = aux_alarm[i];
+[e = *U + &U _hor_alarm * -> _i `ux -> -> # *U &U _hor_alarm `ui `ux *U + &U _aux_alarm * -> _i `ux -> -> # *U &U _aux_alarm `ui `ux ]
+"233
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 233:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 352  ]
+[e :U 353 ]
+}
+"234
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 234:                         break;
+[e $U 330  ]
+"235
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 235:                     }
+}
+[e $U 355  ]
+"236
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 236:                     else if (((tecla) & (1<<(8)))) {
+[e :U 351 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui 356  ]
+{
+"237
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 237:                         break;
+[e $U 330  ]
+"238
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 238:                     }
+}
+[e :U 356 ]
+[e :U 355 ]
+[e :U 350 ]
+[e :U 347 ]
+[e :U 344 ]
+[e :U 341 ]
+[e :U 338 ]
+[e :U 335 ]
+"241
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 241:                     lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"242
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 242:                     for (i = 0; i < 8; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 357  ]
+[e $U 358  ]
+[e :U 357 ]
+{
+"243
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 243:                         lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> _i `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"244
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 244:                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 357  ]
+[e :U 358 ]
+}
+"245
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 245:                 }
+}
+[e :U 332 ]
+"246
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 246:             }
+}
+[e $U 329  ]
+[e :U 330 ]
+}
+"248
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 248:         }
+}
+[e $U 360  ]
+"249
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 249:         else if (((tecla) & (1<<(7)))) {
+[e :U 313 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 361  ]
+{
+"250
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 250:             for (;;) {
+{
+[e :U 362 ]
+{
+"252
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 252:                 lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"253
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 253:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 365  ]
+[e $U 366  ]
+[e :U 365 ]
+{
+"254
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 254:                     lcdData(msg_opc_alarm[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_opc_alarm * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_opc_alarm * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"255
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 255:                 }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 365  ]
+[e :U 366 ]
+}
+"258
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 258:                 lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"259
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 259:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 368  ]
+[e $U 369  ]
+[e :U 368 ]
+{
+"260
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 260:                     lcdData(msg_opc_alarm[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_opc_alarm * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_opc_alarm * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"261
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 261:                 }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 368  ]
+[e :U 369 ]
+}
+"264
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 264:                 lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"265
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 265:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 371  ]
+[e $U 372  ]
+[e :U 371 ]
+{
+"266
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 266:                     lcdData(msg_opc_alarm[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_opc_alarm * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_opc_alarm * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"267
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 267:                 }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 371  ]
+[e :U 372 ]
+}
+"270
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 270:                 lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"271
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 271:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 374  ]
+[e $U 375  ]
+[e :U 374 ]
+{
+"272
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 272:                     lcdData(msg_opc_alarm[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_opc_alarm * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_opc_alarm * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_opc_alarm `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"273
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 273:                 }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 374  ]
+[e :U 375 ]
+}
+"274
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 274:                 for (;;) {
+{
+[e :U 377 ]
+{
+"275
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 275:                     kpDebounce();
+[e ( _kpDebounce ..  ]
+"276
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 276:                     if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 380  ]
+{
+"277
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 277:                         tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"278
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 278:                         break;
+[e $U 378  ]
+"279
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 279:                     }
+}
+[e :U 380 ]
+"280
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 280:                 }
+}
+[e $U 377  ]
+[e :U 378 ]
+}
+"283
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 283:                 if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 381  ]
+{
+"285
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 285:                     lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"286
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 286:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 382  ]
+[e $U 383  ]
+[e :U 382 ]
+{
+"287
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 287:                         lcdData(msg_luzes[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"288
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 288:                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 382  ]
+[e :U 383 ]
+}
+"291
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 291:                     lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"292
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 292:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 385  ]
+[e $U 386  ]
+[e :U 385 ]
+{
+"293
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 293:                         lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"294
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 294:                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 385  ]
+[e :U 386 ]
+}
+"297
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 297:                     lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"298
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 298:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 388  ]
+[e $U 389  ]
+[e :U 388 ]
+{
+"299
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 299:                         lcdData(msg_luzes[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_luzes * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"300
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 300:                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 388  ]
+[e :U 389 ]
+}
+"303
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 303:                     lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"304
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 304:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 391  ]
+[e $U 392  ]
+[e :U 391 ]
+{
+"305
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 305:                         lcdData(msg_luzes[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_luzes * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"306
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 306:                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 391  ]
+[e :U 392 ]
+}
+"308
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 308:                     for (;;) {
+{
+[e :U 394 ]
+{
+"309
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 309:                         kpDebounce();
+[e ( _kpDebounce ..  ]
+"310
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 310:                         if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 397  ]
+{
+"311
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 311:                             tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"314
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 314:                             if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 398  ]
+{
+"315
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 315:                                 if (msg_luzes[0][8] == 'F') {
+[e $ ! == -> *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 70 `ui 399  ]
+{
+"316
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 316:                                     msg_luzes[0][8] = 'N';
+[e = *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux -> -> 78 `ui `uc ]
+"317
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 317:                                     msg_luzes[0][9] = ' ';
+[e = *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux -> -> 32 `ui `uc ]
+"318
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 318:                                 } else {
+}
+[e $U 400  ]
+[e :U 399 ]
+{
+"319
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 319:                                     msg_luzes[0][8] = 'F';
+[e = *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"320
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 320:                                     msg_luzes[0][9] = 'F';
+[e = *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"321
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 321:                                 }
+}
+[e :U 400 ]
+"324
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 324:                                 lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"325
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 325:                                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 401  ]
+[e $U 402  ]
+[e :U 401 ]
+{
+"326
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 326:                                     lcdData(msg_luzes[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"327
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 327:                                 }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 401  ]
+[e :U 402 ]
+}
+"328
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 328:                             } else if (((tecla) & (1<<(0)))) {
+}
+[e $U 404  ]
+[e :U 398 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 405  ]
+{
+"329
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 329:                                 break;
+[e $U 395  ]
+"330
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 330:                             }
+}
+[e :U 405 ]
+[e :U 404 ]
+"331
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 331:                         }
+}
+[e :U 397 ]
+"332
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 332:                     }
+}
+[e $U 394  ]
+[e :U 395 ]
+}
+"333
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 333:                 }
+}
+[e $U 406  ]
+"334
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 334:                 else if (((tecla) & (1<<(7)))) {
+[e :U 381 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 407  ]
+{
+"335
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 335:                     for (;;) {
+{
+[e :U 408 ]
+{
+"337
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 337:                         lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"338
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 338:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 411  ]
+[e $U 412  ]
+[e :U 411 ]
+{
+"339
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 339:                             lcdData(msg_senha[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"340
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 340:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 411  ]
+[e :U 412 ]
+}
+"343
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 343:                         lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"344
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 344:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 414  ]
+[e $U 415  ]
+[e :U 414 ]
+{
+"345
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 345:                             lcdData(msg_senha[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_senha * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"346
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 346:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 414  ]
+[e :U 415 ]
+}
+"349
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 349:                         lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"350
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 350:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 417  ]
+[e $U 418  ]
+[e :U 417 ]
+{
+"351
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 351:                             lcdData(msg_senha[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_senha * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"352
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 352:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 417  ]
+[e :U 418 ]
+}
+"355
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 355:                         lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"356
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 356:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 420  ]
+[e $U 421  ]
+[e :U 420 ]
+{
+"357
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 357:                             lcdData(msg_senha[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_senha * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"358
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 358:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 420  ]
+[e :U 421 ]
+}
+"360
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 360:                         for (;;) {
+{
+[e :U 423 ]
+{
+"361
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 361:                             kpDebounce();
+[e ( _kpDebounce ..  ]
+"362
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 362:                             if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 426  ]
+{
+"363
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 363:                                 tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"364
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 364:                                 break;
+[e $U 424  ]
+"365
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 365:                             }
+}
+[e :U 426 ]
+"366
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 366:                         }
+}
+[e $U 423  ]
+[e :U 424 ]
+}
+"368
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 368:                         if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 427  ]
+{
+"369
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 369:                             if (msg_senha[0][8] == 'F') {
+[e $ ! == -> *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 70 `ui 428  ]
+{
+"370
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 370:                                 msg_senha[0][8] = 'N';
+[e = *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux -> -> 78 `ui `uc ]
+"371
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 371:                                 msg_senha[0][9] = ' ';
+[e = *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux -> -> 32 `ui `uc ]
+"372
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 372:                             } else {
+}
+[e $U 429  ]
+[e :U 428 ]
+{
+"373
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 373:                                 msg_senha[0][8] = 'F';
+[e = *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"374
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 374:                                 msg_senha[0][9] = 'F';
+[e = *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"375
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 375:                             }
+}
+[e :U 429 ]
+"378
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 378:                             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"379
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 379:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 430  ]
+[e $U 431  ]
+[e :U 430 ]
+{
+"380
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 380:                                 lcdData(msg_senha[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"381
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 381:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 430  ]
+[e :U 431 ]
+}
+"382
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 382:                         } else if (((tecla) & (1<<(7)))) {
+}
+[e $U 433  ]
+[e :U 427 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 434  ]
+{
+"384
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 384:                             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"385
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 385:                             for (i = 0; i < 7; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 7 `i `ui 435  ]
+[e $U 436  ]
+[e :U 435 ]
+{
+"386
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 386:                                 lcdData(msg_alt_senha[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alt_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_alt_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"387
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 387:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 7 `i `ui 435  ]
+[e :U 436 ]
+}
+"390
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 390:                             for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 438  ]
+[e $U 439  ]
+[e :U 438 ]
+{
+"391
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 391:                                 lcdData(senha[i]);
+[e ( _lcdData (1 -> *U + &U _senha * -> _i `ux -> -> # *U &U _senha `ui `ux `uc ]
+"392
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 392:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 438  ]
+[e :U 439 ]
+}
+"395
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 395:                             lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"396
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 396:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 441  ]
+[e $U 442  ]
+[e :U 441 ]
+{
+"397
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 397:                                 lcdData(msg_alt_senha[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alt_senha * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_alt_senha * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"398
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 398:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 441  ]
+[e :U 442 ]
+}
+"401
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 401:                             lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"402
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 402:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 444  ]
+[e $U 445  ]
+[e :U 444 ]
+{
+"403
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 403:                                 lcdData(msg_alt_senha[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alt_senha * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_alt_senha * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"404
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 404:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 444  ]
+[e :U 445 ]
+}
+"407
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 407:                             lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"408
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 408:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 447  ]
+[e $U 448  ]
+[e :U 447 ]
+{
+"409
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 409:                                 lcdData(msg_alt_senha[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alt_senha * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_alt_senha * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_alt_senha `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"410
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 410:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 447  ]
+[e :U 448 ]
+}
+"412
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 412:                             pos = 0;
+[e = _pos -> -> 0 `i `ui ]
+"413
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 413:                             for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 450  ]
+[e $U 451  ]
+[e :U 450 ]
+{
+"414
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 414:                                 aux_senha[i] = ' ';
+[e = *U + &U _aux_senha * -> _i `ux -> -> # *U &U _aux_senha `ui `ux -> -> 32 `ui `uc ]
+"415
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 415:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 450  ]
+[e :U 451 ]
+}
+"417
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 417:                             for (;;) {
+{
+[e :U 453 ]
+{
+"418
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 418:                                 kpDebounce();
+[e ( _kpDebounce ..  ]
+"419
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 419:                                 if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 456  ]
+{
+"420
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 420:                                     tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"423
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 423:                                     if (((tecla) & (1<<(4)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 4 `i `ui -> -> 0 `i `ui 457  ]
+{
+"425
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 425:                                         aux_senha[pos] = '0';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 48 `ui `uc ]
+"426
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 426:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"427
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 427:                                     } else if (((tecla) & (1<<(3)))) {
+}
+[e $U 458  ]
+[e :U 457 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 459  ]
+{
+"429
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 429:                                         aux_senha[pos] = '1';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 49 `ui `uc ]
+"430
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 430:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"431
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 431:                                     } else if (((tecla) & (1<<(7)))) {
+}
+[e $U 460  ]
+[e :U 459 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 461  ]
+{
+"433
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 433:                                         aux_senha[pos] = '2';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 50 `ui `uc ]
+"434
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 434:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"435
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 435:                                     } else if (((tecla) & (1<<(11)))) {
+}
+[e $U 462  ]
+[e :U 461 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 11 `i `ui -> -> 0 `i `ui 463  ]
+{
+"437
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 437:                                         aux_senha[pos] = '3';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 51 `ui `uc ]
+"438
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 438:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"439
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 439:                                     } else if (((tecla) & (1<<(2)))) {
+}
+[e $U 464  ]
+[e :U 463 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 2 `i `ui -> -> 0 `i `ui 465  ]
+{
+"441
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 441:                                         aux_senha[pos] = '4';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 52 `ui `uc ]
+"442
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 442:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"443
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 443:                                     } else if (((tecla) & (1<<(6)))) {
+}
+[e $U 466  ]
+[e :U 465 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 6 `i `ui -> -> 0 `i `ui 467  ]
+{
+"445
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 445:                                         aux_senha[pos] = '5';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 53 `ui `uc ]
+"446
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 446:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"447
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 447:                                     } else if (((tecla) & (1<<(10)))) {
+}
+[e $U 468  ]
+[e :U 467 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 10 `i `ui -> -> 0 `i `ui 469  ]
+{
+"449
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 449:                                         aux_senha[pos] = '6';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 54 `ui `uc ]
+"450
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 450:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"451
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 451:                                     } else if (((tecla) & (1<<(1)))) {
+}
+[e $U 470  ]
+[e :U 469 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui 471  ]
+{
+"453
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 453:                                         aux_senha[pos] = '7';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 55 `ui `uc ]
+"454
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 454:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"455
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 455:                                     } else if (((tecla) & (1<<(5)))) {
+}
+[e $U 472  ]
+[e :U 471 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 5 `i `ui -> -> 0 `i `ui 473  ]
+{
+"457
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 457:                                         aux_senha[pos] = '8';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 56 `ui `uc ]
+"458
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 458:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"459
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 459:                                     } else if (((tecla) & (1<<(9)))) {
+}
+[e $U 474  ]
+[e :U 473 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 9 `i `ui -> -> 0 `i `ui 475  ]
+{
+"461
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 461:                                         aux_senha[pos] = '9';
+[e = *U + &U _aux_senha * -> _pos `ux -> -> # *U &U _aux_senha `ui `ux -> -> 57 `ui `uc ]
+"462
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 462:                                         pos++;
+[e ++ _pos -> -> 1 `i `ui ]
+"463
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 463:                                     } else if (((tecla) & (1<<(0)))) {
+}
+[e $U 476  ]
+[e :U 475 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 477  ]
+{
+"464
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 464:                                         break;
+[e $U 454  ]
+"465
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 465:                                     } else if (((tecla) & (1<<(8)))) {
+}
+[e $U 478  ]
+[e :U 477 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui 479  ]
+{
+"466
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 466:                                         for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 480  ]
+[e $U 481  ]
+[e :U 480 ]
+{
+"467
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 467:                                             senha[i] = aux_senha[i];
+[e = *U + &U _senha * -> _i `ux -> -> # *U &U _senha `ui `ux *U + &U _aux_senha * -> _i `ux -> -> # *U &U _aux_senha `ui `ux ]
+"468
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 468:                                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 480  ]
+[e :U 481 ]
+}
+"469
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 469:                                         break;
+[e $U 454  ]
+"470
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 470:                                     }
+}
+[e :U 479 ]
+[e :U 478 ]
+[e :U 476 ]
+[e :U 474 ]
+[e :U 472 ]
+[e :U 470 ]
+[e :U 468 ]
+[e :U 466 ]
+[e :U 464 ]
+[e :U 462 ]
+[e :U 460 ]
+[e :U 458 ]
+"473
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 473:                                     lcdCommand(0xC0 + 8);
+[e ( _lcdCommand (1 -> + -> 192 `i -> 8 `i `uc ]
+"474
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 474:                                     for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 483  ]
+[e $U 484  ]
+[e :U 483 ]
+{
+"475
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 475:                                         lcdData(aux_senha[i]);
+[e ( _lcdData (1 -> *U + &U _aux_senha * -> _i `ux -> -> # *U &U _aux_senha `ui `ux `uc ]
+"476
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 476:                                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 4 `i `ui 483  ]
+[e :U 484 ]
+}
+"477
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 477:                                 }
+}
+[e :U 456 ]
+"478
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 478:                             }
+}
+[e $U 453  ]
+[e :U 454 ]
+}
+"479
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 479:                         } else if (((tecla) & (1<<(0)))) {
+}
+[e $U 486  ]
+[e :U 434 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 487  ]
+{
+"480
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 480:                             break;
+[e $U 409  ]
+"481
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 481:                         }
+}
+[e :U 487 ]
+[e :U 486 ]
+[e :U 433 ]
+"482
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 482:                     }
+}
+[e $U 408  ]
+[e :U 409 ]
+}
+"483
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 483:                 }
+}
+[e $U 488  ]
+"484
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 484:                 else if (((tecla) & (1<<(11)))) {
+[e :U 407 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 11 `i `ui -> -> 0 `i `ui 489  ]
+{
+"485
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 485:                     for (;;) {
+{
+[e :U 490 ]
+{
+"487
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 487:                         lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"488
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 488:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 493  ]
+[e $U 494  ]
+[e :U 493 ]
+{
+"489
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 489:                             lcdData(msg_soneca[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"490
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 490:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 493  ]
+[e :U 494 ]
+}
+"493
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 493:                         lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"494
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 494:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 496  ]
+[e $U 497  ]
+[e :U 496 ]
+{
+"495
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 495:                             lcdData(msg_soneca[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_soneca * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"496
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 496:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 496  ]
+[e :U 497 ]
+}
+"499
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 499:                         lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"500
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 500:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 499  ]
+[e $U 500  ]
+[e :U 499 ]
+{
+"501
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 501:                             lcdData(msg_soneca[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_soneca * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"502
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 502:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 499  ]
+[e :U 500 ]
+}
+"505
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 505:                         lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"506
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 506:                         for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 502  ]
+[e $U 503  ]
+[e :U 502 ]
+{
+"507
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 507:                             lcdData(msg_soneca[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_soneca * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"508
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 508:                         }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 502  ]
+[e :U 503 ]
+}
+"510
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 510:                         for (;;) {
+{
+[e :U 505 ]
+{
+"511
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 511:                             kpDebounce();
+[e ( _kpDebounce ..  ]
+"512
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 512:                             if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 508  ]
+{
+"513
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 513:                                 tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"514
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 514:                                 break;
+[e $U 506  ]
+"515
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 515:                             }
+}
+[e :U 508 ]
+"516
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 516:                         }
+}
+[e $U 505  ]
+[e :U 506 ]
+}
+"519
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 519:                         if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 509  ]
+{
+"520
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 520:                             if (msg_soneca[0][9] == 'F') {
+[e $ ! == -> *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 70 `ui 510  ]
+{
+"521
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 521:                                 msg_soneca[0][9] = 'N';
+[e = *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux -> -> 78 `ui `uc ]
+"522
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 522:                                 msg_soneca[0][10] = ' ';
+[e = *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> -> -> 10 `i `ui `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux -> -> 32 `ui `uc ]
+"523
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 523:                             } else {
+}
+[e $U 511  ]
+[e :U 510 ]
+{
+"524
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 524:                                 msg_soneca[0][9] = 'F';
+[e = *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> -> -> 9 `i `ui `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"525
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 525:                                 msg_soneca[0][10] = 'F';
+[e = *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> -> -> 10 `i `ui `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux -> -> 70 `ui `uc ]
+"526
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 526:                             }
+}
+[e :U 511 ]
+"529
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 529:                             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"530
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 530:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 512  ]
+[e $U 513  ]
+[e :U 512 ]
+{
+"531
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 531:                                 lcdData(msg_soneca[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_soneca * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_soneca `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"532
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 532:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 512  ]
+[e :U 513 ]
+}
+"535
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 535:                         } else if (((tecla) & (1<<(7)))) {
+}
+[e $U 515  ]
+[e :U 509 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 516  ]
+{
+"537
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 537:                             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"538
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 538:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 517  ]
+[e $U 518  ]
+[e :U 517 ]
+{
+"539
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 539:                                 lcdData(msg_ajus_tempo[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_tempo * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_tempo * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"540
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 540:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 517  ]
+[e :U 518 ]
+}
+"543
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 543:                             lcdCommand(0x80 + 7);
+[e ( _lcdCommand (1 -> + -> 128 `i -> 7 `i `uc ]
+"544
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 544:                             for (i = 0; i < 2; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 2 `i `ui 520  ]
+[e $U 521  ]
+[e :U 520 ]
+{
+"545
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 545:                                 lcdData(tempo_son[i]);
+[e ( _lcdData (1 -> *U + &U _tempo_son * -> _i `ux -> -> # *U &U _tempo_son `ui `ux `uc ]
+"546
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 546:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 2 `i `ui 520  ]
+[e :U 521 ]
+}
+"549
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 549:                             lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"550
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 550:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 523  ]
+[e $U 524  ]
+[e :U 523 ]
+{
+"551
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 551:                                 lcdData(msg_ajus_tempo[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_tempo * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_tempo * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"552
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 552:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 523  ]
+[e :U 524 ]
+}
+"555
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 555:                             lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"556
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 556:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 526  ]
+[e $U 527  ]
+[e :U 526 ]
+{
+"557
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 557:                                 lcdData(msg_ajus_tempo[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_tempo * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_tempo * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"558
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 558:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 526  ]
+[e :U 527 ]
+}
+"561
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 561:                             lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"562
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 562:                             for (i = 0; i < 16; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 529  ]
+[e $U 530  ]
+[e :U 529 ]
+{
+"563
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 563:                                 lcdData(msg_ajus_tempo[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_ajus_tempo * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux * -> _i `ux -> -> # *U &U *U + &U _msg_ajus_tempo * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_ajus_tempo `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"564
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 564:                             }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 529  ]
+[e :U 530 ]
+}
+"567
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 567:                             aux_tempo = ((tempo_son[0] - 48)*10) + (tempo_son[1] - 48);
+[e = _aux_tempo + * - -> *U + &U _tempo_son * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _tempo_son * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i ]
+"569
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 569:                             for (;;) {
+{
+[e :U 532 ]
+{
+"570
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 570:                                 kpDebounce();
+[e ( _kpDebounce ..  ]
+"571
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 571:                                 if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 535  ]
+{
+"572
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 572:                                     tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"575
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 575:                                     if (((tecla) & (1<<(3)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 536  ]
+{
+"576
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 576:                                         aux_tempo += 5;
+[e =+ _aux_tempo -> 5 `i ]
+"577
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 577:                                         if (aux_tempo > 95)
+[e $ ! > _aux_tempo -> 95 `i 537  ]
+"578
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 578:                                             aux_tempo = 5;
+[e = _aux_tempo -> 5 `i ]
+[e :U 537 ]
+"579
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 579:                                     }
+}
+[e $U 538  ]
+"580
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 580:                                     else if (((tecla) & (1<<(7)))) {
+[e :U 536 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 539  ]
+{
+"581
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 581:                                         aux_tempo -= 5;
+[e =- _aux_tempo -> 5 `i ]
+"582
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 582:                                         if (aux_tempo < 5)
+[e $ ! < _aux_tempo -> 5 `i 540  ]
+"583
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 583:                                             aux_tempo = 95;
+[e = _aux_tempo -> 95 `i ]
+[e :U 540 ]
+"584
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 584:                                     }
+}
+[e $U 541  ]
+"585
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 585:                                     else if (((tecla) & (1<<(0)))) {
+[e :U 539 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 542  ]
+{
+"586
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 586:                                         break;
+[e $U 533  ]
+"587
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 587:                                     }
+}
+[e :U 542 ]
+[e :U 541 ]
+[e :U 538 ]
+"590
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 590:                                     tempo_son[0] = ((aux_tempo / 10) + 48);
+[e = *U + &U _tempo_son * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux -> + / _aux_tempo -> 10 `i -> 48 `i `uc ]
+"591
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 591:                                     tempo_son[1] = ((aux_tempo % 10) + 48);
+[e = *U + &U _tempo_son * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux -> + % _aux_tempo -> 10 `i -> 48 `i `uc ]
+"594
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 594:                                     lcdCommand(0x80 + 7);
+[e ( _lcdCommand (1 -> + -> 128 `i -> 7 `i `uc ]
+"595
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 595:                                     for (i = 0; i < 2; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 2 `i `ui 543  ]
+[e $U 544  ]
+[e :U 543 ]
+{
+"596
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 596:                                         lcdData(tempo_son[i]);
+[e ( _lcdData (1 -> *U + &U _tempo_son * -> _i `ux -> -> # *U &U _tempo_son `ui `ux `uc ]
+"597
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 597:                                     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 2 `i `ui 543  ]
+[e :U 544 ]
+}
+"598
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 598:                                 }
+}
+[e :U 535 ]
+"599
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 599:                             }
+}
+[e $U 532  ]
+[e :U 533 ]
+}
+"601
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 601:                         } else if (((tecla) & (1<<(0)))) {
+}
+[e $U 546  ]
+[e :U 516 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 547  ]
+{
+"602
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 602:                             break;
+[e $U 491  ]
+"603
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 603:                         }
+}
+[e :U 547 ]
+[e :U 546 ]
+[e :U 515 ]
+"604
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 604:                     }
+}
+[e $U 490  ]
+[e :U 491 ]
+}
+"605
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 605:                 }
+}
+[e $U 548  ]
+"606
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 606:                 else if (((tecla) & (1<<(0)))) {
+[e :U 489 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 549  ]
+{
+"607
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 607:                     break;
+[e $U 363  ]
+"608
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 608:                 }
+}
+[e :U 549 ]
+[e :U 548 ]
+[e :U 488 ]
+[e :U 406 ]
+"609
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 609:             }
+}
+[e $U 362  ]
+[e :U 363 ]
+}
+"610
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 610:         }
+}
+[e :U 361 ]
+[e :U 360 ]
+"611
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 611:     }
+}
+[e $U 282  ]
+[e :U 283 ]
+}
+"612
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 612: }
+[e :UE 281 ]
+}
+"614
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 614: void tocarAlarme() {
+[v _tocarAlarme `(v ~T0 @X0 1 ef ]
+{
+[e :U _tocarAlarme ]
+[f ]
+"615
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 615:     char senha_digitada[4];
+[v _senha_digitada `uc ~T0 @X0 -> 4 `i a ]
+"616
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 616:     int i, cont = 0;
+[v _i `i ~T0 @X0 1 a ]
+[v _cont `i ~T0 @X0 1 a ]
+[e = _cont -> 0 `i ]
+"617
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 617:     int tmp;
+[v _tmp `i ~T0 @X0 1 a ]
+"619
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 619:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"620
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 620:     TRISD = 0x00;
+[e = _TRISD -> -> 0 `i `uc ]
+"621
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 621:     PORTD = 0xFF;
+[e = _PORTD -> -> 255 `i `uc ]
+"623
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 623:     lcdInit();
+[e ( _lcdInit ..  ]
+"624
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 624:     kpInit();
+[e ( _kpInit ..  ]
+"625
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 625:     pwmInit();
+[e ( _pwmInit ..  ]
+"628
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 628:     lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"630
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 630:     pwmSet1(96);
+[e ( _pwmSet1 (1 -> -> 96 `i `uc ]
+"633
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 633:     if (msg_luzes[0][8] == 'N') {
+[e $ ! == -> *U + &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_luzes * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_luzes `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 78 `ui 551  ]
+{
+"634
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 634:         ((PORTA) |= (1<<(5)));
+[e =| _PORTA -> << -> 1 `i -> 5 `i `Vuc ]
+"635
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 635:         ((PORTA) |= (1<<(4)));
+[e =| _PORTA -> << -> 1 `i -> 4 `i `Vuc ]
+"636
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 636:         ((PORTA) |= (1<<(3)));
+[e =| _PORTA -> << -> 1 `i -> 3 `i `Vuc ]
+"637
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 637:         ((PORTA) |= (1<<(2)));
+[e =| _PORTA -> << -> 1 `i -> 2 `i `Vuc ]
+"638
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 638:     }
+}
+[e :U 551 ]
+"640
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 640:     if (msg_senha[0][8] == 'N') {
+[e $ ! == -> *U + &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _msg_senha * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_senha `ui -> -> 16 `i `ui `ux `ui `ux `ui -> 78 `ui 552  ]
+{
+"641
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 641:         for (;;) {
+{
+[e :U 553 ]
+{
+"643
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 643:             lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"644
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 644:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 556  ]
+[e $U 557  ]
+[e :U 556 ]
+{
+"645
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 645:                 lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> -> _i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"646
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 646:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 556  ]
+[e :U 557 ]
+}
+"649
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 649:             lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"650
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 650:             for (i = 0; i < 7; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 7 `i 559  ]
+[e $U 560  ]
+[e :U 559 ]
+{
+"651
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 651:                 lcdData(msg_alarm_ativ[2][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"652
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 652:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 7 `i 559  ]
+[e :U 560 ]
+}
+"654
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 654:             lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"655
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 655:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 562  ]
+[e $U 563  ]
+[e :U 562 ]
+{
+"656
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 656:                 lcdData(msg_alarm_ativ[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"657
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 657:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 562  ]
+[e :U 563 ]
+}
+"659
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 659:             lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"660
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 660:             for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 565  ]
+[e $U 566  ]
+[e :U 565 ]
+{
+"661
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 661:                 lcdData(msg_alarm_ativ[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"662
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 662:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 565  ]
+[e :U 566 ]
+}
+"664
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 664:             for (;;) {
+{
+[e :U 568 ]
+{
+"665
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 665:                 kpDebounce();
+[e ( _kpDebounce ..  ]
+"666
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 666:                 if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 571  ]
+{
+"667
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 667:                     tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"668
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 668:                     break;
+[e $U 569  ]
+"669
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 669:                 }
+}
+[e :U 571 ]
+"670
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 670:             }
+}
+[e $U 568  ]
+[e :U 569 ]
+}
+"672
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 672:             if (((tecla) & (1<<(4)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 4 `i `ui -> -> 0 `i `ui 572  ]
+{
+"674
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 674:                 senha_digitada[cont] = '0';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 48 `ui `uc ]
+"675
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 675:                 cont++;
+[e ++ _cont -> 1 `i ]
+"676
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 676:             } else if (((tecla) & (1<<(3)))) {
+}
+[e $U 573  ]
+[e :U 572 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui 574  ]
+{
+"678
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 678:                 senha_digitada[cont] = '1';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 49 `ui `uc ]
+"679
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 679:                 cont++;
+[e ++ _cont -> 1 `i ]
+"680
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 680:             } else if (((tecla) & (1<<(7)))) {
+}
+[e $U 575  ]
+[e :U 574 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui 576  ]
+{
+"682
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 682:                 senha_digitada[cont] = '2';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 50 `ui `uc ]
+"683
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 683:                 cont++;
+[e ++ _cont -> 1 `i ]
+"684
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 684:             } else if (((tecla) & (1<<(11)))) {
+}
+[e $U 577  ]
+[e :U 576 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 11 `i `ui -> -> 0 `i `ui 578  ]
+{
+"686
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 686:                 senha_digitada[cont] = '3';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 51 `ui `uc ]
+"687
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 687:                 cont++;
+[e ++ _cont -> 1 `i ]
+"688
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 688:             } else if (((tecla) & (1<<(2)))) {
+}
+[e $U 579  ]
+[e :U 578 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 2 `i `ui -> -> 0 `i `ui 580  ]
+{
+"690
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 690:                 senha_digitada[cont] = '4';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 52 `ui `uc ]
+"691
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 691:                 cont++;
+[e ++ _cont -> 1 `i ]
+"692
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 692:             } else if (((tecla) & (1<<(6)))) {
+}
+[e $U 581  ]
+[e :U 580 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 6 `i `ui -> -> 0 `i `ui 582  ]
+{
+"694
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 694:                 senha_digitada[cont] = '5';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 53 `ui `uc ]
+"695
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 695:                 cont++;
+[e ++ _cont -> 1 `i ]
+"696
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 696:             } else if (((tecla) & (1<<(10)))) {
+}
+[e $U 583  ]
+[e :U 582 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 10 `i `ui -> -> 0 `i `ui 584  ]
+{
+"698
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 698:                 senha_digitada[cont] = '6';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 54 `ui `uc ]
+"699
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 699:                 cont++;
+[e ++ _cont -> 1 `i ]
+"700
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 700:             } else if (((tecla) & (1<<(1)))) {
+}
+[e $U 585  ]
+[e :U 584 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui 586  ]
+{
+"702
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 702:                 senha_digitada[cont] = '7';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 55 `ui `uc ]
+"703
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 703:                 cont++;
+[e ++ _cont -> 1 `i ]
+"704
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 704:             } else if (((tecla) & (1<<(5)))) {
+}
+[e $U 587  ]
+[e :U 586 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 5 `i `ui -> -> 0 `i `ui 588  ]
+{
+"706
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 706:                 senha_digitada[cont] = '8';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 56 `ui `uc ]
+"707
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 707:                 cont++;
+[e ++ _cont -> 1 `i ]
+"708
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 708:             } else if (((tecla) & (1<<(9)))) {
+}
+[e $U 589  ]
+[e :U 588 ]
+[e $ ! != & _tecla -> << -> 1 `i -> 9 `i `ui -> -> 0 `i `ui 590  ]
+{
+"710
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 710:                 senha_digitada[cont] = '9';
+[e = *U + &U _senha_digitada * -> -> _cont `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 57 `ui `uc ]
+"711
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 711:                 cont++;
+[e ++ _cont -> 1 `i ]
+"712
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 712:             }
+}
+[e :U 590 ]
+[e :U 589 ]
+[e :U 587 ]
+[e :U 585 ]
+[e :U 583 ]
+[e :U 581 ]
+[e :U 579 ]
+[e :U 577 ]
+[e :U 575 ]
+[e :U 573 ]
+"714
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 714:             lcdCommand(0xC0 + 7);
+[e ( _lcdCommand (1 -> + -> 192 `i -> 7 `i `uc ]
+"715
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 715:             for (i = 0; i < 4; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 591  ]
+[e $U 592  ]
+[e :U 591 ]
+{
+"716
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 716:                 lcdData(senha_digitada[i]);
+[e ( _lcdData (1 -> *U + &U _senha_digitada * -> -> _i `ui `ux -> -> # *U &U _senha_digitada `ui `ux `uc ]
+"717
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 717:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 591  ]
+[e :U 592 ]
+}
+"719
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 719:             if (((tecla) & (1<<(0)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 594  ]
+{
+"721
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 721:                 for (i = 0; i < 4; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 595  ]
+[e $U 596  ]
+[e :U 595 ]
+{
+"722
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 722:                     if (senha[i] != senha_digitada[i]) {
+[e $ ! != -> *U + &U _senha * -> -> _i `ui `ux -> -> # *U &U _senha `ui `ux `i -> *U + &U _senha_digitada * -> -> _i `ui `ux -> -> # *U &U _senha_digitada `ui `ux `i 598  ]
+{
+"723
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 723:                         cont = 0;
+[e = _cont -> 0 `i ]
+"724
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 724:                         break;
+[e $U 596  ]
+"725
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 725:                     }
+}
+[e :U 598 ]
+"726
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 726:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 595  ]
+[e :U 596 ]
+}
+"728
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 728:                 if (i == 4) {
+[e $ ! == _i -> 4 `i 599  ]
+{
+"730
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 730:                     break;
+[e $U 554  ]
+"732
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 732:                 } else {
+}
+[e $U 600  ]
+[e :U 599 ]
+{
+"733
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 733:                     lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"734
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 734:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 601  ]
+[e $U 602  ]
+[e :U 601 ]
+{
+"735
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 735:                         lcdData(msg_alarm_ativ[3][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"736
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 736:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 601  ]
+[e :U 602 ]
+}
+"738
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 738:                     lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"739
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 739:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 604  ]
+[e $U 605  ]
+[e :U 604 ]
+{
+"740
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 740:                         lcdData(msg_alarm_ativ[4][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"741
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 741:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 604  ]
+[e :U 605 ]
+}
+"742
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 742:                     atraso_ms(3000);
+[e ( _atraso_ms (1 -> -> 3000 `i `ui ]
+"744
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 744:                     for (i = 0; i < 4; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 607  ]
+[e $U 608  ]
+[e :U 607 ]
+{
+"745
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 745:                         senha_digitada[i] = ' ';
+[e = *U + &U _senha_digitada * -> -> _i `ui `ux -> -> # *U &U _senha_digitada `ui `ux -> -> 32 `ui `uc ]
+"746
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 746:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 607  ]
+[e :U 608 ]
+}
+"748
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 748:                     lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"749
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 749:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 610  ]
+[e $U 611  ]
+[e :U 610 ]
+{
+"750
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 750:                         lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"751
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 751:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 610  ]
+[e :U 611 ]
+}
+"753
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 753:                     cont = 0;
+[e = _cont -> 0 `i ]
+"754
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 754:                 }
+}
+[e :U 600 ]
+"755
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 755:             }
+}
+[e :U 594 ]
+"756
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 756:             if (((tecla) & (1<<(8)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui 613  ]
+{
+"757
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 757:                 rtc_r();
+[e ( _rtc_r ..  ]
+"758
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 758:                 tmp = ((time[6] - 48)*10) + (time[7] - 48) + ((tempo_son[0] - 48)*10) + (tempo_son[1] - 48);
+[e = _tmp + + + * - -> *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _time * -> -> -> 7 `i `ui `ux -> -> # *U &U _time `ui `ux `i -> 48 `i * - -> *U + &U _tempo_son * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _tempo_son * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i ]
+"759
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 759:                 if (tmp > 59) {
+[e $ ! > _tmp -> 59 `i 614  ]
+{
+"760
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 760:                     hor_alarm[4] = ((tmp / 60) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _tmp -> 60 `i -> 48 `i `uc ]
+"761
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 761:                     tmp %= 60;
+[e =% _tmp -> 60 `i ]
+"762
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 762:                 }
+}
+[e :U 614 ]
+"764
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 764:                 hor_alarm[6] = ((tmp / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _tmp -> 10 `i -> 48 `i `uc ]
+"765
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 765:                 hor_alarm[7] = ((tmp % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _tmp -> 10 `i -> 48 `i `uc ]
+"767
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 767:                 lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"768
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 768:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 615  ]
+[e $U 616  ]
+[e :U 615 ]
+{
+"769
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 769:                     lcdData(msg_alarm_ativ[5][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"770
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 770:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 615  ]
+[e :U 616 ]
+}
+"772
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 772:                 lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"773
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 773:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 618  ]
+[e $U 619  ]
+[e :U 618 ]
+{
+"774
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 774:                     lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"775
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 775:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 618  ]
+[e :U 619 ]
+}
+"777
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 777:                 lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"778
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 778:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 621  ]
+[e $U 622  ]
+[e :U 621 ]
+{
+"779
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 779:                     lcdData(msg_alarm_ativ[6][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"780
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 780:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 621  ]
+[e :U 622 ]
+}
+"782
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 782:                 lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"783
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 783:                 for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 624  ]
+[e $U 625  ]
+[e :U 624 ]
+{
+"784
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 784:                     lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> -> _i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"785
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 785:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 624  ]
+[e :U 625 ]
+}
+"787
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 787:                 atraso_ms(3000);
+[e ( _atraso_ms (1 -> -> 3000 `i `ui ]
+"788
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 788:                 break;
+[e $U 554  ]
+"789
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 789:             }
+}
+[e :U 613 ]
+"790
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 790:         }
+}
+[e $U 553  ]
+[e :U 554 ]
+}
+"791
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 791:     } else {
+}
+[e $U 627  ]
+[e :U 552 ]
+{
+"793
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 793:         lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"794
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 794:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 628  ]
+[e $U 629  ]
+[e :U 628 ]
+{
+"795
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 795:             lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> -> _i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"796
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 796:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 628  ]
+[e :U 629 ]
+}
+"799
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 799:         lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"800
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 800:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 631  ]
+[e $U 632  ]
+[e :U 631 ]
+{
+"801
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 801:             lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"802
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 802:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 631  ]
+[e :U 632 ]
+}
+"805
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 805:         lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"806
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 806:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 634  ]
+[e $U 635  ]
+[e :U 634 ]
+{
+"807
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 807:             lcdData(msg_alarm_ativ[0][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"808
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 808:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 634  ]
+[e :U 635 ]
+}
+"811
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 811:         lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"812
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 812:         for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 637  ]
+[e $U 638  ]
+[e :U 637 ]
+{
+"813
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 813:             lcdData(msg_alarm_ativ[1][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"814
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 814:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 637  ]
+[e :U 638 ]
+}
+"816
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 816:         for (;;) {
+{
+[e :U 640 ]
+{
+"817
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 817:             kpDebounce();
+[e ( _kpDebounce ..  ]
+"818
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 818:             if (kpRead() != tecla) {
+[e $ ! != ( _kpRead ..  _tecla 643  ]
+{
+"819
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 819:                 tecla = kpRead();
+[e = _tecla ( _kpRead ..  ]
+"822
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 822:                 if (((tecla) & (1<<(0)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui 644  ]
+{
+"824
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 824:                     break;
+[e $U 641  ]
+"825
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 825:                 }
+}
+[e :U 644 ]
+"827
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 827:                 if (((tecla) & (1<<(8)))) {
+[e $ ! != & _tecla -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui 645  ]
+{
+"828
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 828:                     rtc_r();
+[e ( _rtc_r ..  ]
+"829
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 829:                     tmp = ((time[6] - 48)*10) + (time[7] - 48) + ((tempo_son[0] - 48)*10) + (tempo_son[1] - 48);
+[e = _tmp + + + * - -> *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _time * -> -> -> 7 `i `ui `ux -> -> # *U &U _time `ui `ux `i -> 48 `i * - -> *U + &U _tempo_son * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _tempo_son * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempo_son `ui `ux `i -> 48 `i ]
+"830
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 830:                     if (tmp > 59) {
+[e $ ! > _tmp -> 59 `i 646  ]
+{
+"831
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 831:                         hor_alarm[4] = ((tmp / 60) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 4 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _tmp -> 60 `i -> 48 `i `uc ]
+"832
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 832:                         tmp %= 60;
+[e =% _tmp -> 60 `i ]
+"833
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 833:                     }
+}
+[e :U 646 ]
+"835
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 835:                     hor_alarm[6] = ((tmp / 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 6 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + / _tmp -> 10 `i -> 48 `i `uc ]
+"836
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 836:                     hor_alarm[7] = ((tmp % 10) + 48);
+[e = *U + &U _hor_alarm * -> -> -> 7 `i `ui `ux -> -> # *U &U _hor_alarm `ui `ux -> + % _tmp -> 10 `i -> 48 `i `uc ]
+"838
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 838:                     lcdCommand(0x80);
+[e ( _lcdCommand (1 -> -> 128 `i `uc ]
+"839
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 839:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 647  ]
+[e $U 648  ]
+[e :U 647 ]
+{
+"840
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 840:                         lcdData(msg_alarm_ativ[5][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"841
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 841:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 647  ]
+[e :U 648 ]
+}
+"843
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 843:                     lcdCommand(0xC0);
+[e ( _lcdCommand (1 -> -> 192 `i `uc ]
+"844
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 844:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 650  ]
+[e $U 651  ]
+[e :U 650 ]
+{
+"845
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 845:                         lcdData(' ');
+[e ( _lcdData (1 -> -> 32 `ui `uc ]
+"846
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 846:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 650  ]
+[e :U 651 ]
+}
+"848
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 848:                     lcdCommand(0x90);
+[e ( _lcdCommand (1 -> -> 144 `i `uc ]
+"849
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 849:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 653  ]
+[e $U 654  ]
+[e :U 653 ]
+{
+"850
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 850:                         lcdData(msg_alarm_ativ[6][i]);
+[e ( _lcdData (1 -> *U + &U *U + &U _msg_alarm_ativ * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux * -> -> _i `ui `ux -> -> # *U &U *U + &U _msg_alarm_ativ * -> -> -> 6 `i `ui `ux -> * -> # *U &U *U &U _msg_alarm_ativ `ui -> -> 16 `i `ui `ux `ui `ux `uc ]
+"851
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 851:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 653  ]
+[e :U 654 ]
+}
+"853
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 853:                     lcdCommand(0xD0);
+[e ( _lcdCommand (1 -> -> 208 `i `uc ]
+"854
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 854:                     for (i = 0; i < 16; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 656  ]
+[e $U 657  ]
+[e :U 656 ]
+{
+"855
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 855:                         lcdData(hor_alarm[i]);
+[e ( _lcdData (1 -> *U + &U _hor_alarm * -> -> _i `ui `ux -> -> # *U &U _hor_alarm `ui `ux `uc ]
+"856
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 856:                     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 656  ]
+[e :U 657 ]
+}
+"858
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 858:                     atraso_ms(3000);
+[e ( _atraso_ms (1 -> -> 3000 `i `ui ]
+"859
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 859:                     break;
+[e $U 641  ]
+"860
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 860:                 }
+}
+[e :U 645 ]
+"861
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 861:             }
+}
+[e :U 643 ]
+"862
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 862:         }
+}
+[e $U 640  ]
+[e :U 641 ]
+}
+"863
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 863:     }
+}
+[e :U 627 ]
+"865
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 865:     pwmSet1(0);
+[e ( _pwmSet1 (1 -> -> 0 `i `uc ]
+"866
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 866:     ((PORTA) &= ~(1<<(5)));
+[e =& _PORTA -> ~ << -> 1 `i -> 5 `i `Vuc ]
+"867
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 867:     ((PORTA) &= ~(1<<(4)));
+[e =& _PORTA -> ~ << -> 1 `i -> 4 `i `Vuc ]
+"868
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 868:     ((PORTA) &= ~(1<<(3)));
+[e =& _PORTA -> ~ << -> 1 `i -> 3 `i `Vuc ]
+"869
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 869:     ((PORTA) &= ~(1<<(2)));
+[e =& _PORTA -> ~ << -> 1 `i -> 2 `i `Vuc ]
+"870
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 870: }
+[e :UE 550 ]
+}
+"872
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 872: void aciona_buzzer(void) {
+[v _aciona_buzzer `(v ~T0 @X0 1 ef ]
+{
+[e :U _aciona_buzzer ]
+[f ]
+"873
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 873:     pwmFrequency(100);
+[e ( _pwmFrequency (1 -> -> 100 `i `ui ]
+"874
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 874:     for (int i = 0; i < 2; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 2 `i 660  ]
+[e $U 661  ]
+[e :U 660 ]
+{
+"875
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 875:         for (int j = 1; j > 0; j = j * 2) {
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 1 `i ]
+[e $ > _j -> 0 `i 663  ]
+[e $U 664  ]
+[e :U 663 ]
+{
+"876
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 876:             ((TRISC) |= (1<<(1)));
+[e =| _TRISC -> << -> 1 `i -> 1 `i `Vuc ]
+"877
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 877:             atraso_ms(100);
+[e ( _atraso_ms (1 -> -> 100 `i `ui ]
+"878
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 878:             break;
+[e $U 664  ]
+"879
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 879:         }
+}
+[e = _j * _j -> 2 `i ]
+[e $ > _j -> 0 `i 663  ]
+[e :U 664 ]
+}
+"880
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 880:         ((TRISC) &= ~(1<<(1)));
+[e =& _TRISC -> ~ << -> 1 `i -> 1 `i `Vuc ]
+"881
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 881:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 2 `i 660  ]
+[e :U 661 ]
+}
+"882
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/main.c: 882: }
+[e :UE 659 ]
+}

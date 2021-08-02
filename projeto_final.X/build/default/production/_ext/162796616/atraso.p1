@@ -1,0 +1,60 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"26 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 26: void atraso_ms(unsigned int valor) {
+[v _atraso_ms `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _atraso_ms ]
+[v _valor `ui ~T0 @X0 1 r1 ]
+[f ]
+"27
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 27:     unsigned int i;
+[v _i `ui ~T0 @X0 1 a ]
+"28
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 28:     volatile unsigned char j, k;
+[v _j `Vuc ~T0 @X0 1 a ]
+[v _k `Vuc ~T0 @X0 1 a ]
+"30
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 30:     for (i = 0; i < valor; i++) {
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 5  ]
+[e :U 2 ]
+{
+"31
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 31:         for (j = 0; j < 41; j++) {
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 41 `i 6  ]
+[e $U 7  ]
+[e :U 6 ]
+{
+"32
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 32:             for (k = 0; k < 3; k++);
+{
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 3 `i 9  ]
+[e $U 10  ]
+[e :U 9 ]
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 3 `i 9  ]
+[e :U 10 ]
+}
+"33
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 33:         }
+}
+[e ++ _j -> -> 1 `i `Vuc ]
+[e $ < -> _j `i -> 41 `i 6  ]
+[e :U 7 ]
+}
+"34
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 34:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 5 ]
+[e $ < _i _valor 2  ]
+[e :U 3 ]
+}
+"35
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/atraso.c: 35: }
+[e :UE 1 ]
+}

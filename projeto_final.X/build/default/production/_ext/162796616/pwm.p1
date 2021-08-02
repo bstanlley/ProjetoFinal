@@ -1,0 +1,117 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"23 C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 23: void pwmSet1(unsigned char porcento)
+[v _pwmSet1 `(v ~T0 @X0 1 ef1`uc ]
+"24
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 24: {
+{
+[e :U _pwmSet1 ]
+"23
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 23: void pwmSet1(unsigned char porcento)
+[v _porcento `uc ~T0 @X0 1 r1 ]
+"24
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 24: {
+[f ]
+"30
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 30:  unsigned int val = ((unsigned int)porcento) *((*(volatile __near unsigned char*)0xFCB)+1);
+[v _val `ui ~T0 @X0 1 a ]
+[e = _val * -> _porcento `ui -> + -> *U -> -> 4043 `i `*VNuc `i -> 1 `i `ui ]
+"31
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 31:  val = val / 25;
+[e = _val / _val -> -> 25 `i `ui ]
+"33
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 33:  val &= 0x03ff;
+[e =& _val -> -> 1023 `i `ui ]
+"35
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 35:  (*(volatile __near unsigned char*)0xFBE) = val >> 2;
+[e = *U -> -> 4030 `i `*VNuc -> >> _val -> 2 `i `uc ]
+"37
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 37:  (*(volatile __near unsigned char*)0xFBD) |= (val & 0x0003) << 4;
+[e =| *U -> -> 4029 `i `*VNuc -> << & _val -> -> 3 `i `ui -> 4 `i `uc ]
+"38
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 38: }
+[e :UE 1 ]
+}
+"40
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 40: void pwmSet2(unsigned char porcento)
+[v _pwmSet2 `(v ~T0 @X0 1 ef1`uc ]
+"41
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 41: {
+{
+[e :U _pwmSet2 ]
+"40
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 40: void pwmSet2(unsigned char porcento)
+[v _porcento `uc ~T0 @X0 1 r1 ]
+"41
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 41: {
+[f ]
+"42
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 42:  unsigned int val = ((unsigned int)porcento) *((*(volatile __near unsigned char*)0xFCB)+1);
+[v _val `ui ~T0 @X0 1 a ]
+[e = _val * -> _porcento `ui -> + -> *U -> -> 4043 `i `*VNuc `i -> 1 `i `ui ]
+"43
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 43:  val /= 25;
+[e =/ _val -> -> 25 `i `ui ]
+"45
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 45:  val &= 0x03ff;
+[e =& _val -> -> 1023 `i `ui ]
+"47
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 47:  (*(volatile __near unsigned char*)0xFBB) = val >> 2;
+[e = *U -> -> 4027 `i `*VNuc -> >> _val -> 2 `i `uc ]
+"49
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 49:  (*(volatile __near unsigned char*)0xFBA) |= (val & 0x0003) << 4;
+[e =| *U -> -> 4026 `i `*VNuc -> << & _val -> -> 3 `i `ui -> 4 `i `uc ]
+"50
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 50: }
+[e :UE 2 ]
+}
+"52
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 52: void pwmFrequency(unsigned int freq)
+[v _pwmFrequency `(v ~T0 @X0 1 ef1`ui ]
+"53
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 53: {
+{
+[e :U _pwmFrequency ]
+"52
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 52: void pwmFrequency(unsigned int freq)
+[v _freq `ui ~T0 @X0 1 r1 ]
+"53
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 53: {
+[f ]
+"56
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 56:  (*(volatile __near unsigned char*)0xFCB) = (125000/(freq)) - 1;
+[e = *U -> -> 4043 `i `*VNuc -> - / -> 125000 `l -> _freq `l -> -> 1 `i `l `uc ]
+"57
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 57: }
+[e :UE 3 ]
+}
+"59
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 59: void pwmInit(void)
+[v _pwmInit `(v ~T0 @X0 1 ef ]
+"60
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 60: {
+{
+[e :U _pwmInit ]
+[f ]
+"61
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 61:  (((*(volatile __near unsigned char*)0xF94)) &= ~(1<<1));
+[e =& *U -> -> 3988 `i `*VNuc -> ~ << -> 1 `i -> 1 `i `uc ]
+"62
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 62:  (((*(volatile __near unsigned char*)0xF94)) &= ~(1<<2));
+[e =& *U -> -> 3988 `i `*VNuc -> ~ << -> 1 `i -> 2 `i `uc ]
+"64
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 64:  (*(volatile __near unsigned char*)0xFCA) |= 0b00000011;
+[e =| *U -> -> 4042 `i `*VNuc -> -> 3 `i `uc ]
+"65
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 65:  (((*(volatile __near unsigned char*)0xFCA)) |= (1<<2));
+[e =| *U -> -> 4042 `i `*VNuc -> << -> 1 `i -> 2 `i `uc ]
+"68
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 68:  (*(volatile __near unsigned char*)0xFBD) |= 0b00001100;
+[e =| *U -> -> 4029 `i `*VNuc -> -> 12 `i `uc ]
+"69
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 69:  (*(volatile __near unsigned char*)0xFBA) |= 0b00001100;
+[e =| *U -> -> 4026 `i `*VNuc -> -> 12 `i `uc ]
+"70
+[; ;C:/Users/bruno/OneDrive/Documentos/ProgramacaoEmbarcada/projeto_final.X/pwm.c: 70: }
+[e :UE 4 ]
+}
